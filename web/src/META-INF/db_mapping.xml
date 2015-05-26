@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.AppEntity">
+                <table name="app" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="appId">
+                                <column name="app_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="appName">
+                                <column name="app_name" length="2147483647"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.CategoryEntity">
+                <table name="category" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="categoryId">
+                                <column name="category_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="categoryName">
+                                <column name="category_name" length="2147483647"/>
+                        </basic>
+                        <basic name="categoryRegistration">
+                                <column name="category_registration" precision="13"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemEntity">
+                <table name="item" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="itemId">
+                                <column name="item_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="itemName">
+                                <column name="item_name" length="2147483647"/>
+                        </basic>
+                        <basic name="itemQuantity">
+                                <column name="item_quantity" precision="10"/>
+                        </basic>
+                        <basic name="itemLink">
+                                <column name="item_link" length="2147483647"/>
+                        </basic>
+                        <basic name="itemRegistration">
+                                <column name="item_registration" precision="13"/>
+                        </basic>
+                        <basic name="itemPrice">
+                                <column name="item_price" precision="131089"/>
+                        </basic>
+                        <basic name="itemDescription">
+                                <column name="item_description" length="2147483647"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsAppEntity">
+                <table name="item_vs_app" schema="public" catalog="S6_SIERRA6"/>
+                <id-class class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsAppEntityPK"/>
+                <attributes>
+                        <id name="appId">
+                                <column name="app_id" nullable="false" precision="10"/>
+                        </id>
+                        <id name="itemId">
+                                <column name="item_id" nullable="false" precision="10"/>
+                        </id>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsOrderEntity">
+                <table name="item_vs_order" schema="public" catalog="S6_SIERRA6"/>
+                <id-class class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsOrderEntityPK"/>
+                <attributes>
+                        <id name="itemId">
+                                <column name="item_id" nullable="false" precision="10"/>
+                        </id>
+                        <id name="orderId">
+                                <column name="order_id" nullable="false" precision="10"/>
+                        </id>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsShoppingCartEntity">
+                <table name="item_vs_shopping_cart" schema="public" catalog="S6_SIERRA6"/>
+                <id-class class="ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsShoppingCartEntityPK"/>
+                <attributes>
+                        <id name="itemId">
+                                <column name="item_id" nullable="false" precision="10"/>
+                        </id>
+                        <id name="shoppingCartId">
+                                <column name="shopping_cart_id" nullable="false" precision="10"/>
+                        </id>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.LogEntity">
+                <table name="log" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="logId">
+                                <column name="log_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="logEntryDate">
+                                <column name="log_entry_date" precision="13"/>
+                        </basic>
+                        <basic name="logRegistration">
+                                <column name="log_registration" precision="13"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.RoleEntity">
+                <table name="role" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="roleId">
+                                <column name="role_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="roleName">
+                                <column name="role_name" length="2147483647"/>
+                        </basic>
+                        <basic name="roleRegistration">
+                                <column name="role_registration" precision="13"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.RoleVsUserRightEntity">
+                <table name="role_vs_user_right" schema="public" catalog="S6_SIERRA6"/>
+                <id-class class="ca.usherbrooke.gegi.sierra6.shared.entity.RoleVsUserRightEntityPK"/>
+                <attributes>
+                        <id name="roleId">
+                                <column name="role_id" nullable="false" precision="10"/>
+                        </id>
+                        <id name="userRightId">
+                                <column name="user_right_id" nullable="false" precision="10"/>
+                        </id>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.SessionEntity">
+                <table name="session" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="sessionId">
+                                <column name="session_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="sessionName">
+                                <column name="session_name" length="2147483647"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.ShoppingCartEntity">
+                <table name="shopping_cart" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="shoppingCartId">
+                                <column name="shopping_cart_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="shoppingCartRegistration">
+                                <column name="shopping_cart_registration" precision="13"/>
+                        </basic>
+                        <basic name="shoppingCartStatus">
+                                <column name="shopping_cart_status" length="2147483647"/>
+                        </basic>
+                        <basic name="shoppingCartTotalPrice">
+                                <column name="shopping_cart_total_price" precision="131089"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.UserRightEntity">
+                <table name="user_right" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="userRightId">
+                                <column name="user_right_id" nullable="false" precision="10"/>
+                        </id>
+                        <basic name="userRightName">
+                                <column name="user_right_name" length="2147483647"/>
+                        </basic>
+                        <basic name="userRightRegistration">
+                                <column name="user_right_registration" precision="13"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.UsersEntity">
+                <table name="users" schema="public" catalog="S6_SIERRA6"/>
+                <attributes>
+                        <id name="cip">
+                                <column name="cip" nullable="false" length="8"/>
+                        </id>
+                        <basic name="userFirstname">
+                                <column name="user_firstname" length="2147483647"/>
+                        </basic>
+                        <basic name="userLastname">
+                                <column name="user_lastname" length="2147483647"/>
+                        </basic>
+                        <basic name="userEmail">
+                                <column name="user_email" length="2147483647"/>
+                        </basic>
+                        <basic name="userRegistration">
+                                <column name="user_registration" precision="13"/>
+                        </basic>
+                </attributes>
+        </entity>
+        <entity class="ca.usherbrooke.gegi.sierra6.shared.entity.UsersVsRoleEntity">
+                <table name="users_vs_role" schema="public" catalog="S6_SIERRA6"/>
+                <id-class class="ca.usherbrooke.gegi.sierra6.shared.entity.UsersVsRoleEntityPK"/>
+                <attributes>
+                        <id name="roleId">
+                                <column name="role_id" nullable="false" precision="10"/>
+                        </id>
+                        <id name="cip">
+                                <column name="cip" nullable="false" length="8"/>
+                        </id>
+                </attributes>
+        </entity>
+</entity-mappings>

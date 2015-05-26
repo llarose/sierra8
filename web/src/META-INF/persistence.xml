@@ -1,0 +1,31 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="S6_SIERRA6">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.AppEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.CategoryEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.ItemEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsAppEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsOrderEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.ItemVsShoppingCartEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.LogEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.RoleEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.RoleVsUserRightEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.SessionEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.ShoppingCartEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.UserRightEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.UsersEntity</class>
+        <class>ca.usherbrooke.gegi.sierra6.shared.entity.UsersVsRoleEntity</class>
+
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://thunder.servebeer.com:5433/S6_SIERRA6"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.user" value="larl2906"/>
+            <property name="eclipselink.jdbc.password" value="larl2906"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

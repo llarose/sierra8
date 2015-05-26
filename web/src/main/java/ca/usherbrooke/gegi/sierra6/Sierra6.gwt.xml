@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='Sierra6'>
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name='com.google.gwt.user.User' />
+    <inherits name='com.google.gwt.inject.Inject' />
+
+    <!-- Default css -->
+    <inherits name='com.google.gwt.user.theme.standard.Standard' />
+    <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+    <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+
+    <!-- Other module inherits -->
+    <inherits name='com.gwtplatform.dispatch.Dispatch' />
+    
+    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
+
+    <!-- GWT-Bootstrap												-->
+    <inherits name="org.gwtbootstrap3.GwtBootstrap3" />
+    <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
+    <inherits name="org.gwtbootstrap3.extras.select.Select"/>
+
+    <!-- Module pour les classes partagées par Opus -->
+    <inherits name='ca.uSherbrooke.gegi.commons.core.opusCommonsCore'/>
+
+    <source path='client' />
+    <source path='shared' />
+
+    <set-configuration-property name="gin.ginjector.modules" 
+                                value="ca.usherbrooke.gegi.sierra6.client.gin.ClientModule"/>
+
+    <!-- Enabling Java Chrome Console -->
+    <!-- Ne fonctionne pas encore.... wtf !!
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <set-property name="gwt.logging.logLevel" value="INFO"/>
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+    -->
+
+    <set-configuration-property name="gwtp.bootstrapper" value="ca.uSherbrooke.gegi.commons.core.client.gatekeeper.BootstrapperImpl"/>
+
+</module>

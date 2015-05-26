@@ -1,0 +1,36 @@
+Configure GIT (ONCE ONLY)
+-------------------------
+git config --global user.email "YOUR EMAIL"
+git config --global user.name "YOUR FULL NAME"
+git config --global push.default current
+git config --global core.autocrlf true
+git config --global credential.helper wincred
+
+git clone https://github.com/kevenv/sierra6.git	TO GET THE INITIAL PROJECT DIRECTORY (ONCE ONLY)
+
+Commands
+--------
+status						STATUS
+commit -m "message"			LOCAL COMMIT (avec message d'une ligne)
+commit						LOCAL COMMIT (va ouvrir notepad++ et vous pourrez ecrire un commit message detaillé de plusieurs lignes)
+commit --amend				UPDATE A LOCAL COMMIT (change the commit message)
+push						REMOTE COMMIT
+pull						REMOTE DOWNLOAD
+
+add						ADD FILE
+add .						ADD ALL FILES
+rm						REMOVE FILE
+
+Workflow
+--------
+1. status
+2. add/rm
+3. commit
+   peut demander de faire un pull avant
+4. push
+
+Outils
+------
+-TortoiseSVN (GUI + Merge tools)
+-SourceTree (GUI Atlassian)
+-P4Merge (Merge tool)

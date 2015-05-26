@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="sierra6:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sierra6-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sierra6:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="jpa-descriptors" facet="web/jpa/JPA" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

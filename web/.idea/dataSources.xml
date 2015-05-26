@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1336433972">
+    <data-source source="LOCAL" name="PostgreSQL - S6_SIERRA6@thunder.servebeer.com" uuid="5768e84a-e131-466a-aff5-f7810d510385">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://thunder.servebeer.com:5433/S6_SIERRA6</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="S6_SIERRA6/EclipseLink" uuid="4ff44fa9-1b1e-4483-bc37-1c08d284fdcc">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://thunder.servebeer.com:5433/S6_SIERRA6</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="S6_SIERRA6/OpenJPA" uuid="b0a7ee12-fd07-4deb-bf74-110e358f0ca6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://thunder.servebeer.com:5433/S6_SIERRA6</jdbc-url>
+      <libraries>
+        <library>
+          <url>jar://$MAVEN_REPOSITORY$/postgresql/postgresql/9.0-801.jdbc4/postgresql-9.0-801.jdbc4.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="S6_SIERRA6/TopLink" uuid="7e3bd9e2-e5a5-4cc9-9f47-83260c29e800">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://thunder.servebeer.com:5433/S6_SIERRA6</jdbc-url>
+      <libraries>
+        <library>
+          <url>jar://$MAVEN_REPOSITORY$/postgresql/postgresql/9.0-801.jdbc4/postgresql-9.0-801.jdbc4.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

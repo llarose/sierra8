@@ -1,0 +1,6 @@
+language: java
+
+jdk:
+  - oraclejdk7
+
+script: mvn test -f web/pom.xml

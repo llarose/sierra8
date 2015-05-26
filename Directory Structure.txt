@@ -1,0 +1,8 @@
+Structure de dossiers
+=====================
+
+db	= scripts de création de la base de données
+web	= IntelliJ workspace
+tools 	= programmes utilitaires random
+tests 	= random crap
+docs 	= documentation random
